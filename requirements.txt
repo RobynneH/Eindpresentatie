@@ -16,3 +16,5 @@ matplotlib
 
 
 sklearn==0.0
+
+openpyxl
