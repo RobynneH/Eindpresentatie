@@ -23,7 +23,7 @@ from funda_scraper import FundaScraper
 import math
 import seaborn as sns
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
