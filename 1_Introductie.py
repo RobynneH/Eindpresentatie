@@ -6,8 +6,7 @@
 
 import streamlit as st
 from PIL import Image
-with st.echo("below"):
-    from st_pages import Page, add_page_title, show_pages
+from st_pages import Page, add_page_title, show_pages
 
 
 # In[19]:
