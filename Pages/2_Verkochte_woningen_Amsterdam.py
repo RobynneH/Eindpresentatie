@@ -9,7 +9,7 @@
 
 
 import streamlit as st
-from st_pages import add_page_title
+# from st_pages import add_page_title
 
 import pandas as pd
 import numpy as np
