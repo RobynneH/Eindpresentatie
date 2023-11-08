@@ -13,7 +13,7 @@ with st.echo("below"):
 # In[19]:
 
 
-st.set_page_config(layout = "wide") #page_title = "Eindpresentatie Funda", 
+# st.set_page_config(layout = "wide") #page_title = "Eindpresentatie Funda", 
 
 
 # In[4]:
