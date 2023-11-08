@@ -6,32 +6,32 @@
 
 import streamlit as st
 from PIL import Image
-from st_pages import Page, add_page_title, show_pages
+# from st_pages import Page, add_page_title, show_pages
 
 
 # In[19]:
 
 
-# st.set_page_config(layout = "wide") #page_title = "Eindpresentatie Funda", 
+st.set_page_config(page_title = "Eindpresentatie Funda", layout = "wide")
 
 
 # In[4]:
 
 
-# Specify what pages should be shown in the sidebar, and what their titles and icons
-# should be
-show_pages([Page("1_Introductie.py", "Introductie"),
-            Page("pages/2_Verkochte_woningen_Amsterdam.py", "Verkochte woningen Amsterdam")])
+# # Specify what pages should be shown in the sidebar, and what their titles and icons
+# # should be
+# show_pages([Page("1_Introductie.py", "Introductie"),
+#             Page("pages/2_Verkochte_woningen_Amsterdam.py", "Verkochte woningen Amsterdam")])
 
 
 # In[21]:
 
 
-# st.sidebar.success("Kies een pagina.")
 st.title("Einpresentatie: Koopwoningen Amsterdam")
 st.subheader("Sten den Hartog & Robynne Hughes")
 image = Image.open('fundalogo.jpg')
 st.image(image)
+st.sidebar.success("Kies een pagina.")
 
 
 # In[ ]:
