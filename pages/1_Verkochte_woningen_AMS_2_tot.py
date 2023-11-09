@@ -349,7 +349,6 @@ def lin_reg():
     plt.ylabel('Prijs per huis Amsterdam')
     plt.title("Lineair Regressie model tussen de prijs en oppervlakte van een huis in Amsterdam")
     st.pyplot(plt)
-    return r2, MSE
 
 
 st.set_page_config(page_title = "Verkochte woningen Amsterdam", layout = "wide")
