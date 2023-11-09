@@ -79,7 +79,7 @@ def plot1():
     st.plotly_chart(fig)
 
 
-st.set_page_config(page_title = "Verkochte woningen Amsterdam", layout = "wide")
+st.set_page_config(page_title = "Test :Verkochte woningen Amsterdam", layout = "wide")
 st.title("Verkochte woningen Amsterdam")
 st.sidebar.header("Verkochte woningen Amsterdam")
 st.header("Prijzen van verkochte woningen")
