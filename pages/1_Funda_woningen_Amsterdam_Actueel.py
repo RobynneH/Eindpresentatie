@@ -112,7 +112,7 @@ def map_amsterdam():
                 icon=folium.Icon(color='cadetblue', icon_color=color),
             ).add_to(marker_cluster)
     # Display the Folium map using streamlit_folium
-    folium_static(map_amsterdam, use_container_width=True)
+    folium_static(map_amsterdam)
 
 st.set_page_config(page_title = "Koopwoningen Amsterdam", layout = "wide")
 st.title("Koopwoningen Amsterdam")
@@ -146,13 +146,13 @@ col5, col6 = st.columns(2)
 with col5:
     map_amsterdam()
 with col6:
-    st.write("Deze interactieve kaart visualiseert de locaties van vastgoed in Amsterdam, inclusief informatie zoals vraagprijs, energielabel, bouwjaar en meer. De functionaliteiten van de kaart zijn als volgt:")
-    st.write("- **Marker Cluster Groepering:** Bij het uitzoomen worden markers geclusterd voor een overzichtelijke weergave van dicht opeengepakte woningen.")
-    st.write("- **Individuele Markers:** Bij het inzoomen op een specifieke locatie worden markers individueel weergegeven, waardoor gedetailleerde informatie beschikbaar is.")
-    st.write("- **Legenda voor Energielabels:** Een legenda aan de linkerkant geeft de verschillende energielabels weer met bijbehorende kleuren. Hierdoor kan de gebruiker eenvoudig de energielabel van woningen identificeren.")
-    st.write("- **Pop-up Informatie:** Door op een marker te klikken, verschijnt gedetailleerde informatie zoals adres, vraagprijs, energielabel, en een foto van het vastgoed.")
-    st.write("- **Zoom en Pan Functionaliteit:** De kaart biedt de mogelijkheid om in te zoomen en te pannen, waardoor gebruikers specifieke gebieden van Amsterdam kunnen verkennen.")
-    st.write("De kaart is ontworpen om een visuele weergave te bieden van de geografische spreiding van vastgoed en is handig voor het verkennen van woningkenmerken in verschillende delen van de stad.")
+    st.markdown("Deze interactieve kaart visualiseert de locaties van vastgoed in Amsterdam, inclusief informatie zoals vraagprijs, energielabel, bouwjaar en meer. De functionaliteiten van de kaart zijn als volgt:")
+    st.markdown("- **Marker Cluster Groepering:** Bij het uitzoomen worden markers geclusterd voor een overzichtelijke weergave van dicht opeengepakte woningen.")
+    st.markdown("- **Individuele Markers:** Bij het inzoomen op een specifieke locatie worden markers individueel weergegeven, waardoor gedetailleerde informatie beschikbaar is.")
+    st.markdown("- **Legenda voor Energielabels:** Een legenda aan de linkerkant geeft de verschillende energielabels weer met bijbehorende kleuren. Hierdoor kan de gebruiker eenvoudig de energielabel van woningen identificeren.")
+    st.markdown("- **Pop-up Informatie:** Door op een marker te klikken, verschijnt gedetailleerde informatie zoals adres, vraagprijs, energielabel, en een foto van het vastgoed.")
+    st.markdown("- **Zoom en Pan Functionaliteit:** De kaart biedt de mogelijkheid om in te zoomen en te pannen, waardoor gebruikers specifieke gebieden van Amsterdam kunnen verkennen.")
+    st.markdown("De kaart is ontworpen om een visuele weergave te bieden van de geografische spreiding van vastgoed en is handig voor het verkennen van woningkenmerken in verschillende delen van de stad.")
 
 
 # In[ ]:
