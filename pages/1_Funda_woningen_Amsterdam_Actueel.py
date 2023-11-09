@@ -43,7 +43,7 @@ def boxplot_listing_price():
                       hovertemplate='<b>%{y:.0f} Euros</b><br>%{customdata[0]}<br>%{customdata[1]} m²<br>%{customdata[2]} rooms<br>%{customdata[3]} bedrooms<br>%{customdata[4]} bathrooms')
     fig.update_layout(showlegend=False)
     # Display the box plot using Streamlit
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
 def energie_labels():
     # Energy label palette
@@ -112,7 +112,7 @@ def map_amsterdam():
                 icon=folium.Icon(color='cadetblue', icon_color=color),
             ).add_to(marker_cluster)
     # Display the Folium map using streamlit_folium
-    folium_static(map_amsterdam)
+    folium_static(map_amsterdam, use_container_width=True)
 
 st.set_page_config(page_title = "Koopwoningen Amsterdam", layout = "wide")
 st.title("Koopwoningen Amsterdam")
@@ -129,7 +129,7 @@ with col2:
     st.write("**Inzichten:**")
     st.write("- **Prijsverschil per Woningtype:** In het figuur is duidelijk te zien dat appartementen gemiddeld gezien goedkoper zijn dan huizen.")
     st.write("Appartementen in Amsterdam kosten gemiddeld 510K en huizen momenteel 760K.")
-    st.write("- **Uitschieters Boven het 95% Interval:** Interessant om te zien zijn de woningen buiten het 95% betrouwbaarheidsinterval(whiskers), die opvallend enkel boven het bovengrens liggen.")
+    st.write("- **Uitschieters boven de whiskers:** Interessant om te zien zijn de woningen buiten de whiskers, die opvallend enkel boven de bovengrens liggen.")
 
 # energie labels
 col3, col4 = st.columns(2)
