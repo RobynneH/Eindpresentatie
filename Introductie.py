@@ -17,8 +17,8 @@ def run():
         layout = "wide",
     )
 
-    st.title("Einpresentatie: Koopwoningen Amsterdam")
-    st.sidebar.success("Selecteer een optie.")
+    st.title("Eindpresentatie: Koopwoningen Amsterdam")
+    # st.sidebar.success("Selecteer een optie.")
     st.sidebar.header("Introductie")
     
     st.subheader("Sten den Hartog & Robynne Hughes")
@@ -26,10 +26,10 @@ def run():
     st.image(image)
     
     st.write("In dit dashboard kijken we naar woningen in Amsterdam die momenteel te koop staan en verkocht zijn via Funda in het afgelopen anderhalf jaar. Deze informatie wordt met een Scraper direct van Funda afgehaald.")
-    st.write("De informatie die wij per woning ontvangen bevat onder andere de url naar de Funda site, de prijs, oppervlakte, aantal kamers etc.")
-    st.write("In de sidebar kun je kijken naar de data analyses die zijn uitgevoerd over de huidige woningen op Funda of de verkochte woningen op Funda.")
+    st.write("De informatie die wij per woning ontvangen bevat onder andere de url naar de Funda site, de prijs in euro, oppervlakte, aantal kamers etc..")
+    st.write("In de sidebar kun je kijken naar de data analyses die zijn uitgevoerd over de actuele woningen op Funda of de verkochte woningen op Funda.")
 
-    st.write("Naast de informatie die we van Funda afhalen, kijken we ook naar veilighieds-indexen in Amsterdam. Deze informatie hebben we van de gemeente van Amsterdam. (Een link naar de website staat bij de bronnen). Wil je zelf naar de data kijken, dan kun je een document met de knop hieronder downloaden: ")
+    st.write("Naast de informatie die we van Funda afhalen, kijken we ook naar veiligheids-index van verschillende categorieën in Amsterdam. Deze informatie hebben we van de gemeente van Amsterdam (een link naar de website staat bij de bronnen). Wil je zelf naar de data kijken, dan kun je een document met de knop hieronder downloaden: ")
     with open('veiligheidsindex_2023.xlsx', 'rb') as file:
         st.download_button(label = "Download veiligheidsindex bestand",
                            data = file,
