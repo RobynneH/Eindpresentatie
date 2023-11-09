@@ -18,6 +18,7 @@ def run():
     )
 
     st.title("Einpresentatie: Koopwoningen Amsterdam")
+    st.sidebar.success("Selecteer een optie.")
     st.sidebar.header("Introductie")
     
     st.subheader("Sten den Hartog & Robynne Hughes")
