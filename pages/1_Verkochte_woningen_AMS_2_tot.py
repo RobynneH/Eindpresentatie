@@ -386,11 +386,11 @@ with col10:
     st.write("Met de heatmap kunnen we de correlaties zien van een aantal variabelen op de prijs van een woning. Hierbij is te zien dat de oppervlakte van een woning de grootste correlatie met de prijs van een woning heeft. Dit wordt dan ook de variabele die wij gaan gebruiken voor ons lineair model.")
 
 col11, col12 = st.columns(2)
-    with col11:
-        st.pyplot(plt)
-    with col12:
-        st.write("In de plot hiernaast is een simpele lineaire regressie te zien met een scatterplot tussen de prijs van een woning en de oppervlakte van een woning. Hieruit komt een logische conclusie dat hoe groter de oppervlakte van een woning, hoe duurder de woning is.")
-        st.write("Met dit model komen we op een mean squared error(MSE) van ", MSE, " en een R kwadraat van ", r2)
+with col11:
+    st.pyplot(plt)
+with col12:
+    st.write("In de plot hiernaast is een simpele lineaire regressie te zien met een scatterplot tussen de prijs van een woning en de oppervlakte van een woning. Hieruit komt een logische conclusie dat hoe groter de oppervlakte van een woning, hoe duurder de woning is.")
+    st.write("Met dit model komen we op een mean squared error(MSE) van ", MSE, " en een R kwadraat van ", r2)
 
 
 # In[ ]:
