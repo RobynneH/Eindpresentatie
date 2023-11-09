@@ -87,7 +87,7 @@ st.header("Prijzen van verkochte woningen")
 col1, col2 = st.columns(2)
 
 with col1:
-    plot1
+    plot1()
 with col2:
     st.write("Deze boxplot laat de verdeling van de prijzen van verkochtte woningen zien. Met de button kan je de boxplot wijzigen naar de verdeling van laatst gevraagde prijs per vierkante meter. Hierbij is bij beide te zien dat de IQR-range niet heel breed is, en dat de prijzen dus best veel van elkaar verschillen. Ook is het duidelijk te zien dat de kwart met de duurste woning prijzen een groot verschil hebben. Hier zijn duidelijk een paar uitwijkers te zien.")
 
