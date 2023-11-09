@@ -340,7 +340,7 @@ def bereken_MSE():
     return MSE
 
 def lin_reg():
-    lt.figure(figsize=(15,10))
+    plt.figure(figsize=(15,10))
     plt.scatter(Funda_reg_na['size'], Funda_reg_na['price_sold'])
     m, b = np.polyfit(Funda_reg_na['size'], Funda_reg_na['price_sold'], 1)
     plt.plot(Funda_reg_na['size'].values, m*Funda_reg_na['size'].values + b, c='k')
