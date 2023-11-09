@@ -21,13 +21,6 @@ from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
 import plotly.express as px
 
-
-st.set_page_config(page_title = "Koopwoningen Amsterdam", layout = "wide")
-st.title("Koopwoningen Amsterdam")
-st.sidebar.header("Koopwoningen Amsterdam")
-image = Image.open('fundalogo.jpg')
-st.image(image)
-
 # Load the split DataFrames into Python
 coords1 = pd.read_csv('coords1.csv')
 coords2 = pd.read_csv('coords2.csv')
@@ -126,6 +119,11 @@ def map_amsterdam():
 #     map_amsterdam
 
 
+st.set_page_config(page_title = "Koopwoningen Amsterdam", layout = "wide")
+st.title("Koopwoningen Amsterdam")
+st.sidebar.header("Koopwoningen Amsterdam")
+image = Image.open('fundalogo.jpg')
+st.image(image)
 
 # Boxplot
 col1, col2 = st.columns(2)
