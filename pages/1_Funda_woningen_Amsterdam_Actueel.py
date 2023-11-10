@@ -73,7 +73,7 @@ def energie_labels():
 def map_amsterdam():
     # Create a Folium map centered around Amsterdam
     initial_location = [52.3676, 4.9041]
-    map_amsterdam = folium.Map(location=initial_location, zoom_start=12, width = 750)
+    map_amsterdam = folium.Map(location=initial_location, zoom_start=12, width = 700)
     # Create a marker cluster group for better performance
     marker_cluster = MarkerCluster().add_to(map_amsterdam)
     # Energy label palette
