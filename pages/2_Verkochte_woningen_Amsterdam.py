@@ -370,7 +370,7 @@ with col2:
     
 col3, col4 = st.columns(2)
 with col3:
-    st.write("In deze scatterplot wordt er gekeken naar de relatie tussen de verkoopprijs en de laatst gevraagde prijs per vierkante meter van een woning en de aankoopdatumn. Er is hier duidelijk te zien dat we voor juli 2022 niet veel data hebben, dit is omdat de Scraper die de informatie van Funda haalt een limiet heeft.")
+    st.write("In deze scatterplot wordt er gekeken naar de relatie tussen de verkoopprijs of de laatst gevraagde prijs per vierkante meter van een woning en de aankoopdatumn. Er is hier duidelijk te zien dat we voor juli 2022 niet veel data hebben, dit is omdat de Scraper die de informatie van Funda haalt een limiet heeft.")
     st.write("Bij de scatterplot met laatst gevraagde prijs per vierkante meter is te zien dat de prijzen veel ruimer van elkaar verdeeld liggen.")
     st.write("Er is verder bij beide te zien dat veel woningen voor ongeveer dezelde prijs verkocht zijn.")
 with col4:
